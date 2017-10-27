@@ -1,0 +1,14 @@
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCcXQDJABBrZT04u48zR28bGyk1LBnSHuI",
+    authDomain: "squawker-d5c2a.firebaseapp.com",
+    databaseURL: "https://squawker-d5c2a.firebaseio.com",
+    projectId: "squawker-d5c2a",
+    storageBucket: "squawker-d5c2a.appspot.com",
+    messagingSenderId: "926899706966"
+  };
+  firebase.initializeApp(config);
+</script>

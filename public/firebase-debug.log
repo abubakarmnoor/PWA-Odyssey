@@ -1,0 +1,75 @@
+[debug] [2017-10-27T06:47:35.591Z] ----------------------------------------------------------------------
+[debug] [2017-10-27T06:47:35.593Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Maestroman\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only hosting
+[debug] [2017-10-27T06:47:35.593Z] CLI Version:   3.13.1
+[debug] [2017-10-27T06:47:35.593Z] Platform:      win32
+[debug] [2017-10-27T06:47:35.593Z] Node Version:  v8.7.0
+[debug] [2017-10-27T06:47:35.594Z] Time:          Fri Oct 27 2017 14:47:35 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:47:35.594Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-27T06:47:35.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-27T06:47:35.610Z] > authorizing via signed-in user
+[debug] [2017-10-27T06:47:35.613Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-demo-project  
+ Fri Oct 27 2017 14:47:35 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:47:37.704Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-27T06:47:37.707Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-demo-project/tokens  
+ Fri Oct 27 2017 14:47:37 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:47:38.835Z] <<< HTTP RESPONSE 200
+[info] 1
+[info] 
+[info] === Deploying to 'fir-demo-project'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2017-10-27T06:47:44.504Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/fir-demo-project/uploads/-KxR_WgvYnV-aCjPq47b?fileCount=547&message=  
+ Fri Oct 27 2017 14:47:44 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:48:00.150Z] <<< HTTP RESPONSE 403
+[debug] [2017-10-27T06:48:00.150Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2017-10-27T06:48:00.153Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (C:\Users\Maestroman\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:10:13)
+    at Request._callback (C:\Users\Maestroman\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:43:25)
+    at Request.self.callback (C:\Users\Maestroman\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:125:13)
+    at Request.emit (events.js:213:7)
+    at Request.<anonymous> (C:\Users\Maestroman\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1163:10)
+    at emitOne (events.js:115:13)
+    at Request.emit (events.js:210:7)
+    at IncomingMessage.<anonymous> (C:\Users\Maestroman\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1085:12)
+    at Object.onceWrapper (events.js:314:30)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-10-27T06:49:26.384Z] ----------------------------------------------------------------------
+[debug] [2017-10-27T06:49:26.386Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Maestroman\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-10-27T06:49:26.386Z] CLI Version:   3.13.1
+[debug] [2017-10-27T06:49:26.386Z] Platform:      win32
+[debug] [2017-10-27T06:49:26.387Z] Node Version:  v8.7.0
+[debug] [2017-10-27T06:49:26.387Z] Time:          Fri Oct 27 2017 14:49:26 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:49:26.387Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-27T06:49:26.402Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-27T06:49:26.403Z] > authorizing via signed-in user
+[debug] [2017-10-27T06:49:26.405Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-demo-project  
+ Fri Oct 27 2017 14:49:26 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:49:27.561Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-27T06:49:27.564Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-demo-project/tokens  
+ Fri Oct 27 2017 14:49:27 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:49:28.459Z] <<< HTTP RESPONSE 200
+[info] 5
+[info] 
+[info] === Deploying to 'fir-demo-project'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2017-10-27T06:49:31.964Z] >>> HTTP REQUEST PUT https://fir-demo-project.firebaseio.com/.settings/rules.json?dryRun=true {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+} 
+ Fri Oct 27 2017 14:49:31 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-10-27T06:49:33.066Z] <<< HTTP RESPONSE 401
+[debug] [2017-10-27T06:49:33.067Z] <<< HTTP RESPONSE BODY {
+  "error" : "Permission denied"
+}
+
+[error] 
+[error] Error: Unexpected error while deploying database rules.
